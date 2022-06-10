@@ -1,14 +1,23 @@
+@font-face {
+  font-family: 'AdiHaus';
+  src: URL('./fonts/adihaus_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AdiHaus';
+  src: URL('./fonts/adihaus_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, sans-serif;
+  font-family: AdiHaus, sans-serif;
   color: #423A3A;
-}
-
-body, html {
-  min-width: 100%;
-  min-height: 100vh;
+  font-size: 16px;
 }
 
 body {
@@ -18,76 +27,68 @@ body {
   align-items: center;
 }
 
-header {
-  margin: 1.125rem;
-  display: flex;
-  justify-content: center;
-}
-
 #logo {
   width: 4.438rem;
+  margin: 2rem 0;
 }
 
 #hero {
-  background: center / cover url("./images/model.png");
   width: 100%;
-  height: 250px;
+  height: 35vh;
+  background: center / cover no-repeat url("./images/model.png");
+}
+
+p {
+  text-align: center;
 }
 
 #headline {
-  margin: 1rem 2rem;
-  font-size: 2rem;
-}
-
-h2 {
-  text-align: center;
-}
-
-#headline h2:nth-of-type(1){
-  letter-spacing: .2rem;
+  margin: .5rem 2rem 0;
   font-size: 3rem;
-  font-weight: 300;
-  color: #CD3A24;
+  letter-spacing: .4rem;
+  line-height: 1.8;
+  color:#CD3A24;
+}
+
+#headline span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
 }
 
 #message {
+  margin: .825rem 2rem 0;
+  font-size: .875rem;
   font-weight: 100;
-  font-size: .775rem;
-  line-height: 1.7rem;
-  text-align: center;
-  margin: 0 2rem;
+  line-height: 1.75rem;
 }
 
 form {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   width: 80%;
   margin: 2rem 0 4rem;
 }
 
-input {
-  height: 3rem;
-  padding: .5rem 1rem;
-  border: 1px solid black;
-}
-
-form > input:nth-of-type(1) {
-  flex-grow: 2;
-  border-right: 0;
-  border-top-left-radius: .2rem;
-  border-bottom-left-radius: .2rem;
-}
-
-form > input:nth-of-type(2) {
-  flex-grow: 1;
-  border-left: 0;
-  border-top-right-radius: .2rem;
-    border-bottom-right-radius: .2rem;
-  background-color: #333333;
-  color: #F2F2F2;
-}
-
 label {
   display: none;
+}
+
+input {
+  padding: .75rem;
+  border: 1px solid #333333;
+}
+
+#email {
+  flex-grow: 2;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+#email ~ input {
+  flex-grow: 1;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  color:#F2F2F2;
+  background-color: #333333;
 }
