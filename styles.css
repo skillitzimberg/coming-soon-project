@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'AdiHaus';
-  src: URL('./fonts/adihaus_regular.ttf') format('truetype');
+  font-family: "AdiHaus";
+  src: URL("./fonts/adihaus_regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'AdiHaus';
-  src: URL('./fonts/adihaus_bold.ttf') format('truetype');
+  font-family: "AdiHaus";
+  src: URL("./fonts/adihaus_bold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
@@ -16,20 +16,53 @@
   padding: 0;
   box-sizing: border-box;
   font-family: AdiHaus, sans-serif;
-  color: #423A3A;
+  color: #423a3a;
   font-size: 16px;
 }
 
 body {
-  background: #F2F2F2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 400px;
+  background: #f2f2f2;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid #333333;
+}
+
+label {
+  display: none;
 }
 
 #logo {
   width: 4.438rem;
   margin: 2rem 0;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
 }
 
 #hero {
@@ -38,57 +71,30 @@ body {
   background: center / cover no-repeat url("./images/model.png");
 }
 
-p {
-  text-align: center;
-}
-
-#headline {
-  margin: .5rem 2rem 0;
-  font-size: 3rem;
-  letter-spacing: .4rem;
-  line-height: 1.8;
-  color:#CD3A24;
-}
-
-#headline span {
-  display: block;
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.1;
-}
-
 #message {
-  margin: .825rem 2rem 0;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 100;
   line-height: 1.75rem;
 }
 
-form {
-  display: flex;
-  width: 80%;
-  margin: 2rem 0 4rem;
-}
-
-label {
-  display: none;
-}
-
-input {
-  padding: .75rem;
-  border: 1px solid #333333;
-}
-
 #email {
   flex-grow: 2;
-  border-top-left-radius: .25rem;
-  border-bottom-left-radius: .25rem;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 #email ~ input {
   flex-grow: 1;
-  border-top-right-radius: .25rem;
-  border-bottom-right-radius: .25rem;
-  color:#F2F2F2;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  color: #f2f2f2;
   background-color: #333333;
+}
+
+.highlight {
+  margin: 0.5rem 2rem 0;
+  font-weight: 400;
+  letter-spacing: 0.4rem;
+  line-height: 1.8;
+  color: #cd3a24;
 }
