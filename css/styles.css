@@ -1,16 +1,3 @@
-@font-face {
-  font-family: "AdiHaus";
-  src: URL("./fonts/adihaus_regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AdiHaus";
-  src: URL("./fonts/adihaus_bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: bold;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -53,22 +40,25 @@ label {
   display: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #logo {
   width: 4.438rem;
   margin: 2rem 0;
 }
 
 #content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 2rem;
+  width: 80%;
 }
 
 #hero {
   width: 100%;
   height: 35vh;
-  background: center / cover no-repeat url("./images/model.png");
+  background: center / cover no-repeat url("../images/model.png");
 }
 
 #message {

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "AdiHaus";
+  src: URL("../fonts/adihaus_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: URL("../fonts/adihaus_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
