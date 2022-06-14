@@ -8,6 +8,7 @@
     height: 100vh;
     margin: 0;
     text-align: left;
+    background-image: url("../images/Frame.png");
   }
 
   h2 {
@@ -40,7 +41,7 @@
     top: 0;
     right: 0;
     z-index: -1;
-    background: center / cover no-repeat url("../images/model-angled.png");
+    background: center / cover no-repeat url("../images/foot.png");
   }
 
   #message {
@@ -49,7 +50,7 @@
     font-size: 1rem;
   }
 
-  #svg-background {
+  /* #svg-background {
     position: absolute;
     width: 984px;
     height: 100%;
@@ -58,7 +59,7 @@
     background-repeat: no-repeat no-repeat;
     background-position: bottom right, top left;
     z-index: -1;
-  }
+  } */
 
   .highlight {
     margin: 0;
