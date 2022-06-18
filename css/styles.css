@@ -36,13 +36,6 @@ input {
   height: 48px;
 }
 
-input[type="text"] {
-  width: 246px;
-  padding-left: 16px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
 input[type="button"] {
   width: 64px;
   background-color: #423a3a;
@@ -52,6 +45,13 @@ input[type="button"] {
   font-size: 18px;
   font-weight: 700;
   color: white;
+}
+
+input[type="text"] {
+  width: 246px;
+  padding-left: 16px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 label {
@@ -83,11 +83,11 @@ p {
   height: 250px;
   max-width: 400px;
   margin: 0 0 30px;
-  background: center / cover no-repeat url(../images/athlete-small.png);
+  background: center / cover no-repeat url(../images/mobile-shoes.jpg);
 }
 
 .highlight {
-  color: #cd3a24;
+  color: #2f80ed;
   font-weight: 100;
   margin-bottom: 20px;
 }
