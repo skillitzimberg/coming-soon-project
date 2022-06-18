@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+
+  h2 {
+    font-size: 64px;
+    line-height: 71px;
+  }
+
+  main {
+    width: 30%;
+    margin: 0 0 0 10%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #athlete {
+    position: absolute;
+    right: 0%;
+    min-width: 50%;
+    height: 100vh;
+    background: center / cover no-repeat url(../images/athlete-big.png);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%);
+    /* REGARDING clip-path: polygon: 
+      Think of these as edges defined by 2 points:
+      Top edge: 0% 0%, 100% 0%;
+      Right edge: 100% 0%, 100% 100%;
+      Bottom edgde: 100% 100%, 30% 100%;
+      Left edge: 30% 100%, 0% 0%;
+
+      Caveat: the y-axis is 0 at the top of the screen & 100 at the bottom.
+    */
+  }
+
+  #background {
+    position: absolute;
+    left: 0%;
+    min-width: 100%;
+    height: 100vh;
+    background: center / cover no-repeat url(../images/desktop-bg.png);
+    z-index: -1;
+  }
+
+  #content {
+    margin: 25% 0 0;
+  }
+
+  #logo {
+    margin: 15% 0 0;
+  }
+}
