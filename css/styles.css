@@ -29,6 +29,7 @@ button {
     rgba(125, 121, 121, 1) 0%,
     rgba(41, 41, 41, 1) 100%
   );
+  border: none;
 }
 
 button:focus {
@@ -58,6 +59,7 @@ input {
 
 input:focus {
   border: 2px solid #2f80ed;
+  border-right: none;
 }
 
 input[type="text"] {
